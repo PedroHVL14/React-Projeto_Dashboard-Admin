@@ -5,7 +5,7 @@ import { Switch } from "@/components/ui/switch";
 import { useTheme } from "@/context/ThemeProvider";
 import { useLanguage } from "@/context/LanguageProvider";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { Flag, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const SettingsForm = () => {
   const { theme, toggleTheme } = useTheme();
