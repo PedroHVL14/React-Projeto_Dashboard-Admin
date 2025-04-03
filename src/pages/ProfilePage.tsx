@@ -1,0 +1,23 @@
+
+import { Sidebar } from "@/components/layout/Sidebar";
+import { Header } from "@/components/layout/Header";
+import { ProfileCard } from "@/components/profile/ProfileCard";
+
+const ProfilePage = () => {
+  return (
+    <div className="flex min-h-screen">
+      <Sidebar />
+      
+      <div className="flex-1 pl-[70px] lg:pl-[250px]">
+        <Header title="Perfil de Usuário" />
+        
+        <main className="container mx-auto p-4 space-y-6">
+          <h2 className="text-2xl font-semibold tracking-tight mb-6">Informações do Perfil</h2>
+          <ProfileCard />
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default ProfilePage;
